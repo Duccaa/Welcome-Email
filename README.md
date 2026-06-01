@@ -11,7 +11,7 @@ Responsive onboarding email built using table-based HTML and email development b
 - Mobile-friendly layout
 - Accessible markup
 
-![Desktop](images/artistry-welcome-email.png)
+![Desktop](images/aritsty-welcome-email.png)
 
 ![Dark mode 1](images/artistry-dark-1.jpg)
 
