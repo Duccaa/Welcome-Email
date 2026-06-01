@@ -99,6 +99,10 @@
           padding-left: 20px !important;
           padding-right: 20px !important;
         }
+        .stack-column {
+          display: block !important;
+          width: 100% !important;
+        }
       }
 
       @media (prefers-color-scheme: dark) {
@@ -106,6 +110,12 @@
         .wrapper {
           background-color: #efefef !important;
           color: #000000 !important;
+        }
+        .dark-mode-button {
+          background: #9244e9 !important;
+        }
+        .dark-mode-button span {
+          color: #ffffff !important;
         }
       }
     </style>
@@ -116,7 +126,7 @@
     style="
       font-family: Arial, Helvetica, sans-serif;
       background: #f4f4f4;
-      color:#222222;
+      color: #222222;
       margin: 0;
       padding: 0;
       -webkit-text-size-adjust: 100%;
@@ -144,7 +154,8 @@
           color: transparent;
         "
       >
-        Thanks for joining us. Your account is ready. Discover what you can do next. 
+        Thanks for joining us. Your account is ready. Discover what you can do
+        next.
       </div>
       <table
         role="presentation"
@@ -154,7 +165,12 @@
         cellspacing="0"
         width="100%"
         bgcolor="#f4f4f4"
-        style="background: #f4f4f4; width: 100%; font-family: Arial, Helvetica, sans-serif;"
+        style="
+          background: #f4f4f4;
+          width: 100%;
+          border-spacing: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        "
       >
         <tr>
           <td align="center" valign="top" style="padding: 20px 10px">
@@ -174,25 +190,33 @@
               "
             >
               <tr>
-                <td class="mobile-padding" style="padding: 24px 0 24px 40px">
+                <td align="center" class="mobile-padding" style="padding: 24px 40px">
                   <a
                     href="https://dushacode.com"
                     target="_blank"
                     style="text-decoration: none"
                   >
-                  <picture>
-                    <source srcset="https://res.cloudinary.com/dgh4kzt6l/image/upload/v1780280966/logo-loght_oz9r6q.png" media="(prefers-color-scheme: dark)">
-                    <img src="https://res.cloudinary.com/dgh4kzt6l/image/upload/v1780281092/logo-dark_wbfhkx.png" width="120"
-                                        alt="Company Logo"
-                                        style="
-                                            display: block;
-                                            border: 0;
-                                            outline: none;
-                                            width: 120px;
-                                            max-width: 100%;
-                                            height: auto;
-                                            display: block;
-                                        ">
+                    <picture>
+                      <source
+                        srcset="
+                          images/logo-light.png
+                        "
+                        media="(prefers-color-scheme: dark)"
+                      />
+                      <img
+                        src="images/logo-dark.png"
+                        width="120"
+                        alt="Company Logo"
+                        style="
+                          display: block;
+                          border: 0;
+                          outline: none;
+                          width: 120px;
+                          max-width: 100%;
+                          height: auto;
+                          display: block;
+                        "
+                      />
                     </picture>
                   </a>
                 </td>
@@ -200,7 +224,7 @@
               <tr>
                 <td align="center" valign="top" style="padding-bottom: 28px">
                   <img
-                    src="https://placehold.net/1-800x600.png"
+                    src="images/artistry-hero.png"
                     width="520"
                     alt="Hero Image"
                     style="
@@ -215,12 +239,13 @@
                 </td>
               </tr>
               <tr>
-                <td class="mobile-padding" style="padding: 0 40px 24px">
+                <td align="center" class="mobile-padding" style="padding: 0 40px 24px">
                   <h1
                     style="
                       font-family: Arial, Helvetica, sans-serif;
-                      font-size: 32px;
-                      line-height: 40px;
+                      font-size: 28px;
+                      line-height: 36px;
+                      font-weight: 700;
                       color: #222222;
                       mso-line-height-rule: exactly;
                       margin: 0;
@@ -229,7 +254,15 @@
                   >
                     Welcome to Artistry!
                   </h1>
-                  <p style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #555555">
+                  <p
+                    style="
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 16px;
+                      line-height: 24px;
+                      color: #555555;
+                      margin: 0;
+                    "
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Etiam sed odio semper, fringilla nisi sit amet, fermentum
                     dolor. Maecenas facilisis, ligula sit amet semper feugiat,
@@ -239,7 +272,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="mobile-padding" style="padding: 0 40px 40px">
+                <td align="center" class="mobile-padding" style="padding: 0 40px 40px">
                   <!--[if mso]>
                     <v:roundrect
                       xmlns:v="urn:schemas-microsoft-com:vml"
@@ -272,7 +305,8 @@
                     cellpadding="0"
                   >
                     <tr>
-                      <td
+                      <td align="center"
+                        class="dark-mode-button"
                         bgcolor="#222222"
                         style="
                           border-radius: 4px;
@@ -290,14 +324,200 @@
                             text-decoration: none;
                           "
                         >
-                          <span style="display: block; padding: 14px 28px; color: #ffffff;"
+                          <span
+                            style="
+                              display: block;
+                              padding: 14px 28px;
+                              color: #ffffff;
+                            "
                             >Explore products</span
                           >
                         </a>
                       </td>
                     </tr>
                   </table>
-                   <!--<![endif]-->
+                  <!--<![endif]-->
+                </td>
+              </tr>
+              <tr>
+                <td align="center"class="mobile-padding" style="padding: 0 40px 24px">
+                  <h2
+                    style="
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 22px;
+                      line-height: 30px;
+                      font-weight: 700;
+                      color: #222222;
+                      mso-line-height-rule: exactly;
+                      margin: 0;
+                    "
+                  >
+                    Our Recommendations for You
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" class="mobile-padding" style="padding: 0 40px 40px;">
+                  <table
+                    role="presentation"
+                    width="100%"
+                    border="0"
+                    cellspacing="0"
+                    cellpadding="0"
+                    style="table-layout: fixed"
+                  >
+                    <tr>
+                      <td width="33.33%" valign="top" class="stack-column">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td style="padding: 5px" align="center">
+                              <img
+                                src="images/product-1.png"
+                                width="100%"
+                                style="display: block; border: 0"
+                                alt="Product 1"
+                              />
+
+                              <h3
+                                style="
+                                  font-size: 18px;
+                                  line-height: 26px;
+                                  font-weight: 600;
+                                  margin: 12px 0 6px;
+                                  color: #222;
+                                "
+                              >
+                                Product One
+                              </h3>
+
+                              <p
+                                style="
+                                  font-size: 14px;
+                                  line-height: 24px;
+                                  color: #555;
+                                  margin: 0;
+                                  padding-bottom: 24px;
+                                "
+                              >
+                                Short product description goes here.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td width="33.33%" valign="top" class="stack-column">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td style="padding: 5px" align="center">
+                              <img
+                                src="images/product-2.png"
+                                width="100%"
+                                style="display: block; border: 0"
+                                alt="Product 2"
+                              />
+
+                              <h3
+                                style="
+                                  font-size: 18px;
+                                  line-height: 26px;
+                                  font-weight: 600;
+                                  margin: 12px 0 6px;
+                                  color: #222;
+                                "
+                              >
+                                Product Two
+                              </h3>
+
+                              <p
+                                style="
+                                  font-size: 14px;
+                                  line-height: 24px;
+                                  color: #555;
+                                  margin: 0;
+                                  padding-bottom: 24px;
+                                "
+                              >
+                                Second product description goes here.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td width="33.33%" valign="top" class="stack-column">
+                        <table role="presentation" width="100%">
+                          <tr>
+                            <td style="padding: 5px" align="center">
+                              <img
+                                src="images/product-3.png"
+                                width="100%"
+                                style="display: block; border: 0"
+                                alt="Product 3"
+                              />
+
+                              <h3
+                                style="
+                                  font-size: 18px;
+                                  line-height: 26px;
+                                  font-weight: 600;
+                                  margin: 12px 0 6px;
+                                  color: #222;
+                                "
+                              >
+                                Product Three
+                              </h3>
+
+                              <p
+                                style="
+                                  font-size: 14px;
+                                  line-height: 24px;
+                                  color: #555;
+                                  margin: 0;
+                                  padding-bottom: 24px;
+                                "
+                              >
+                                Third product description goes here.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background: #222222;
+                    padding: 30px;
+                    color: #999999;
+                    text-align: center;
+                  "
+                  align="center"
+                >
+                  <p style="font-size: 12px; line-height: 18px; color: #999999; margin: 0;">
+                    © 2026 Artistry. All rights reserved. | 123 Main Street,
+                    Anytown, USA
+                  </p>
+                  <p
+                    style="
+                      font-size: 12px;
+                      line-height: 18px;
+                      color: #999999;
+                      padding-top: 8px;
+                      margin: 0;
+                    "
+                  >
+                    <a href="https://dushacode.com" style="color: #999"
+                      ><span style="color: #999">Unsubscribe</span></a
+                    >
+                    |
+                    <a href="https://dushacode.com/privacy" style="color: #999"
+                      ><span style="color: #999">Privacy Policy</span></a
+                    >
+                  </p>
                 </td>
               </tr>
             </table>
