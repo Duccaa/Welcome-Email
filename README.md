@@ -5,8 +5,8 @@ Responsive onboarding email built using table-based HTML and email development b
 
 # Features
 
-Responsive design
-Dark mode support
-Outlook VML button
-Mobile-friendly layout
-Accessible markup
+- Responsive design
+- Dark mode support
+- Outlook VML button
+- Mobile-friendly layout
+- Accessible markup
